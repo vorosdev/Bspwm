@@ -1,6 +1,7 @@
 <div align="center">
   <h1>My configuration for bspwm </h1>
-
+  
+---
   <a href="https://github.com/baskerville/bspwm">
     <img src="https://img.shields.io/badge/bspwm-informational.svg?style=for-the-badge&logo=c&color=b4befe&logoColor=cdd6f4&labelColor=1e1e2e" />
   </a>
@@ -30,3 +31,13 @@
 | Launcher   | rofi              |
 | FileManager| thunar            |
 
+---
+#### Installation:
+##### Manual:
+```
+coming soon
+```
+##### Automated:
+```
+coming soon
+```
