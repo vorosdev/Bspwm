@@ -35,7 +35,13 @@
 #### Installation:
 ##### Manual:
 ```
-coming soon
+git clone https://github.com/vorosdev/Bspwm.git
+cd Bspwm
+yay -Syu --needed --nocleanmenu --nodiffmenu --noeditmenu --removemake --noconfirm - < pkgs.txt
+mv ./.config ~/.config
+mv ./.zshrc ~/
+mv ./Pictures ~/
+mv ./fonts/* /usr/share/fonts/
 ```
 ##### Automated:
 ```
