@@ -14,7 +14,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/vorosdev/Bspwm/assets/95487675/95588610-9898-455c-bbfa-0635a220daff" />
+  <img src="https://github.com/vorosdev/Bspwm/assets/95487675/faef0896-f758-4607-9eb3-9fb41a678271" />
 </div>
 
 ---
