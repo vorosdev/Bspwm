@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# Check if the focused window is in floating mode
+if bspc query -N -n focused.floating > /dev/null; then
+  step=21
+else
+  step=100
+fi
+
+# Determine the direction and coordinates based on the argument provided
+case "$1" in
+  west)
+    direction=right
+    opposite_direction=left
+    x="-$step"
+    y=0
+    ;;
+  east)
+    direction=right
+    opposite_direction=left
+    x="$step"
+    y=0
+    ;;
+  north)
+    direction=top
+    opposite_direction=bottom
+    x=0
+    y="-$step"
+    ;;
+  south)
+    direction=top
+    opposite_direction=bottom
+    x=0
+    y="$step"
+    ;;
+  *)
+    echo "Usage: $0 [west|east|north|south]"
+    exit 1
+    ;;
+esac
+
+# Move the focused window in the specified direction
+bspc node -z "$direction" "$x" "$y" || bspc node -z "$opposite_direction" "$x" "$y"
+

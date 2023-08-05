@@ -1,0 +1,11 @@
+#!/bin/sh
+
+IFACE=$(/usr/sbin/ip a | grep "tun0" | awk '{print $2; exit}' | tr -d ':')
+
+if [ "$IFACE" = "tun0" ]; then
+  ip_address=$(/usr/sbin/ip addr show tun0 | awk '/inet / {print $2}')
+  ip=$(echo "$ip_address" | cut -d'/' -f1)
+  echo "%{F#9fef00}󰆧 %{F#ffffff}$ip%{u-}"
+else
+  echo "%{F#9fef00}󱐝 %{F#ffffff} Disconnected"
+fi

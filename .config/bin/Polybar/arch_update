@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if ping -q -c 1 -W 1 google.com &>/dev/null; then
+  updates=$(yay -Qu 2>/dev/null | wc -l)
+  echo "$updates"
+else
+  echo "0"
+fi
+
