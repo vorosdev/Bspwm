@@ -2,4 +2,4 @@
 
 ip_address=$(/usr/sbin/ip a | grep "enp42s0" | awk '/inet / {print $2; exit}' | cut -d '/' -f1)
 
-echo "%{F#2495e7}󰈀 %{F#ffffff}$ip_address%{u-}"
+echo "%{F#89dceb}󰈀 %{F#89dceb}$ip_address%{u-}"

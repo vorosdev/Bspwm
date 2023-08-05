@@ -4,7 +4,7 @@ ip_address=$(/bin/cat /home/v1ceof/.config/bin/Polybar/target | awk '{print $1}'
 machine_name=$(/bin/cat /home/v1ceof/.config/bin/Polybar/target | awk '{print $2}')
 
 if [ $ip_address ] && [ $machine_name ]; then
-    echo "%{F#e51d0b}󰓾 %{F#ffffff}$ip_address%{u-} - $machine_name"
+    echo "%{F#F38BA8}󰓾 %{F#fab387}$ip_address%{u-} - $machine_name"
 else
-    echo "%{F#e51d0b}ﲅ %{F#ffffff} No target"
+    echo "%{F#F38BA8}ﲅ %{F#cdd6f4} No target"
 fi
