@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/github/repo-size/vorosdev/Bspwm?style=for-the-badge&logo=gitbook&color=f2cdcd&logoColor=cdd6f4&labelColor=1e1e2e" />
   </a>
   <a href="https://github.com/vorosdev/Bspwm/stargazers">
-    <img src="https://img.shields.io/github/stars/vorosdev/qtile?style=for-the-badge&logo=starship&color=94e2d5&logoColor=cdd6f4&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/github/stars/vorosdev/Bspwm?style=for-the-badge&logo=starship&color=94e2d5&logoColor=cdd6f4&labelColor=1e1e2e" />
   </a>
 </div>
 
