@@ -19,17 +19,18 @@
 
 ---
 
-| Programs   | Using             |
-| ---------- | ----------------- |
-| WM         | bspwm             |
-| Bar        | polybar           |
-| OS         | arch linux        |
-| Terminal   | kitty             |
-| Shell      | zsh               |
-| Editor     | neovim / vscode   |
-| Compositor | picom             |
-| Launcher   | rofi              |
-| FileManager| thunar            |
+| Programs      | Using             |
+| ------------- | ----------------- |
+| WM            | bspwm             |
+| Bar           | polybar           |
+| OS            | arch linux        |
+| Terminal      | kitty             |
+| Shell         | zsh               |
+| Editor        | neovim / vscode   |
+| Compositor    | picom             |
+| Launcher      | rofi              |
+| File Manager  | thunar            |
+| Notifications | wired             |
 
 ---
 #### Installation:
@@ -41,7 +42,7 @@ yay -Syu --needed --nocleanmenu --nodiffmenu --noeditmenu --removemake --noconfi
 mv ./.config ~/.config
 mv ./.zshrc ~/
 mv ./Pictures ~/
-mv ./fonts/* /usr/share/fonts/
+sudo mv ./fonts/* /usr/share/fonts/
 ```
 ##### Automated:
 ```
