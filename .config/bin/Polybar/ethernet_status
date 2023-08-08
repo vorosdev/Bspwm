@@ -1,5 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 
-ip_address=$(/usr/sbin/ip a | grep "enp42s0" | awk '/inet / {print $2; exit}' | cut -d '/' -f1)
+# Replace network interface "enp42s0"
 
-echo "%{F#89dceb}󰈀 %{F#89dceb}$ip_address%{u-}"
+IFACE=$(ip a | awk '/^[0-9]+: enp42s0:/ {print $2; exit}' | tr -d ':')
+ip_address=$(ip addr show "$IFACE" | awk '/inet / {print $2}')
+
+if [[ "$IFACE" == "enp42s0" && -n "$ip_address" ]]; then
+  ip=$(echo "$ip_address" | cut -d'/' -f1)
+  echo "%{F#89dceb}󰈀 %{F#89dceb}$ip%{u-}"
+elif [[ "$IFACE" != "enp42s0" || -z "$ip_address" ]]; then
+  localhost=$(ip addr show lo | awk '/inet / {print $2}')
+  ip_local=$(echo "$localhost" | cut -d'/' -f1)
+  echo "%{F#89dceb}󰈀 %{F#cdd6f4} $ip_local"
+fi
+
