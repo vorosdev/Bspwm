@@ -122,8 +122,8 @@ super + z
 	~/.config/polybar/scripts/./launcher
 
 # open google chrome
-super + shift + b
-  /home/v1ceof/.config/bin/flags/chrome-launcher
+super + shift + g
+  /usr/bin/google-chrome-stable
 
 # open vmware
 super + shift + v
@@ -140,7 +140,7 @@ super + shift + s
 # open spotify
 super + alt + s
   /usr/bin/spotify
-
+  
 # i3lock 
 super + ctrl + l
   ~/.config/bin/sxhkd/i3lock/./lock.sh 
@@ -155,3 +155,7 @@ super + r
 
 super + ctrl + r
   /usr/bin/redshift -x
+
+# open burpsuite
+super + shift + b
+  /usr/bin/burpsuite
