@@ -13,6 +13,7 @@ gotop-bin
 i3lock-color
 kitty
 lxappearance
+lsd
 mpd
 neofetch
 neovim
