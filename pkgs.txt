@@ -12,9 +12,7 @@ google-chrome
 gotop-bin
 i3lock-color
 kitty
-lsd
 lxappearance
-mesa
 mpd
 neofetch
 neovim
@@ -42,4 +40,3 @@ tmux-plugin-manager
 udiskie
 wget
 wmname
-whitesur-icon-theme-git
